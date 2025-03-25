@@ -134,116 +134,139 @@
     
     <!-- Contact Widget Section End -->
 
-    <!-- Call To Action Section Begin -->
-    <section class="contact spad">
-        <div class="container">
+<!-- Formulario de Agenda de Citas Begin -->
+<section class="contact spad">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="contact__form text-center">
+                    <h3>Agenda tu cita</h3>
+                    <form action="#" class="mx-auto" style="max-width: 600px;">
+                        <div class="form-group text-left">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Nombre y apellidos" required>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" class="form-control" placeholder="Número de contacto" required>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="servicio">Servicio requerido</label>
+                            <select id="servicio" class="form-control" required>
+                                <option value="">Seleccione un servicio</option>
+                                <option value="consulta">Consulta inicial</option>
+                                <option value="seguimiento">Seguimiento</option>
+                                <option value="especializado">Servicio especializado</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="fecha">Fecha preferida</label>
+                            <input type="date" id="fecha" class="form-control" required>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="hora">Hora preferida</label>
+                            <input type="time" id="hora" class="form-control" required>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="mensaje">Mensaje adicional</label>
+                            <textarea id="mensaje" class="form-control" placeholder="Detalles adicionales sobre tu cita"></textarea>
+                        </div>
+                        <button type="submit" class="site-btn mt-4">Reservar cita</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Formulario de Agenda de Citas End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <div class="contact__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798902705!2d-74.25986790365917!3d40.697670067823786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1596152431947!5m2!1sen!2sbd"
-                            height="450" style="border:0;"></iframe>
+                    <div class="footer__top__logo">
+                        <a href="#"><img src="img/reydelcódigo.com.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="contact__form">
-                        <h3>Ponte en contacto</h3>
+                    <div class="footer__top__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__option">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer__option__item">
+                        <h5>Sobre nosotros</h5>
+                        <p>Formado en 2006 por Matt Hobbs y Cael Jones, Videoprah es una empresa de producción galardonada y de servicio completo especializada.</p>
+                        <a href="#" class="read__more">Leer más <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__option__item">
+                        <h5>Quiénes somos</h5>
+                        <ul>
+                            <li><a href="#">Equipo</a></li>
+                            <li><a href="#">Carreras</a></li>
+                            <li><a href="#">Contáctanos</a></li>
+                            <li><a href="#">Ubicaciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__option__item">
+                        <h5>Nuestro trabajo</h5>
+                        <ul>
+                            <li><a href="#">Función</a></li>
+                            <li><a href="#">Últimos</a></li>
+                            <li><a href="#">Ver archivo</a></li>
+                            <li><a href="#">Video para web</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__option__item">
+                        <h5>Boletín</h5>
+                        <p>Videoprah es una empresa de producción galardonada y de servicio completo especializada.</p>
                         <form action="#">
-                            <input type="text" placeholder="Nombre">
-                            <input type="text" placeholder="Correo Electrónixo">
-                            <input type="text" placeholder="Sitio Web">
-                            <textarea placeholder="Mensaje"></textarea>
-                            <button type="submit" class="site-btn">Enviar Mensaje</button>
+                            <input type="text" placeholder="Correo electrónico">
+                            <button type="submit"><i class="fa fa-send"></i></button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Call To Action Section End -->
-
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/reydelcódigo.com.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__option">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer__option__item">
-                            <h5>Sobre nosotros</h5>
-                            <p>Formado en 2006 por Matt Hobbs y Cael Jones, Videoprah es una empresa de producción galardonada y de servicio completo especializada.</p>
-                            <a href="#" class="read__more">Leer más <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3">
-                        <div class="footer__option__item">
-                            <h5>Quiénes somos</h5>
-                            <ul>
-                                <li><a href="#">Equipo</a></li>
-                                <li><a href="#">Carreras</a></li>
-                                <li><a href="#">Contáctanos</a></li>
-                                <li><a href="#">Ubicaciones</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3">
-                        <div class="footer__option__item">
-                            <h5>Nuestro trabajo</h5>
-                            <ul>
-                                <li><a href="#">Función</a></li>
-                                <li><a href="#">Últimos</a></li>
-                                <li><a href="#">Ver archivo</a></li>
-                                <li><a href="#">Video para web</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Boletín</h5>
-                            <p>Videoprah es una empresa de producción galardonada y de servicio completo especializada.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Correo electrónico">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer__copyright">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text">Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            Todos los derechos reservados | Esta pagina está hecha con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="#" target="_blank">El rey del código</a>
-                        </p>                        
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
+        
+        <div class="footer__copyright">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <p class="footer__copyright__text">Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        Todos los derechos reservados | Esta pagina está hecha con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="#" target="_blank">El rey del código</a>
+                    </p>                        
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Footer Section End -->
+    </div>
+</footer>
+<!-- Footer Section End -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
