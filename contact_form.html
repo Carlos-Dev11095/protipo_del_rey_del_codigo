@@ -73,119 +73,63 @@
     </header>
     <!-- Header End -->
 
-    <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
-                        <h2>Contactanos</h2>
-                        <div class="breadcrumb__links">
-                            <a href="#">Inicio</a>
-                            <span>Contacto</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
-
     <!-- Contact Widget Section Begin -->
     <section class="contact-widget spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
-                    <div class="contact__widget__item">
-                        <div class="contact__widget__item__icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="contact__widget__item__text">
-                            <h4>Dirección</h4>
-                            <p>Los Angeles Gournadi, 1230 Bariasl</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
-                    <div class="contact__widget__item">
-                        <div class="contact__widget__item__icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="contact__widget__item__text">
-                            <h4>Línea de atención</h4>
-                            <p>1-677-124-44227 • 1-688-356-66889</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
-                    <div class="contact__widget__item">
-                        <div class="contact__widget__item__icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="contact__widget__item__text">
-                            <h4>Correo electrónico</h4>
-                            <p>Support@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     
     <!-- Contact Widget Section End -->
-
-<!-- Formulario de Agenda de Citas Begin -->
-<section class="contact spad">
+<!-- Compact Appointment Form -->
+<section class="contact spad pt-4 pb-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
-                <div class="contact__form text-center">
-                    <h3>Agenda tu cita</h3>
-                    <form action="#" class="mx-auto" style="max-width: 600px;">
-                        <div class="form-group text-left">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" class="form-control" placeholder="Nombre y apellidos" required>
+                <div class="contact__form">
+                    <h3 class="text-center mb-4">Agenda tu cita</h3>
+                    <form action="#" class="compact-form">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                            </div>
                         </div>
-                        <div class="form-group text-left">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="tel" class="form-control" placeholder="Teléfono" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select class="form-control" required>
+                                    <option value="">Servicio requerido</option>
+                                    <option>Consulta inicial</option>
+                                    <option>Seguimiento</option>
+                                    <option>Servicio especializado</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group text-left">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" class="form-control" placeholder="Número de contacto" required>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="time" class="form-control" required>
+                            </div>
                         </div>
-                        <div class="form-group text-left">
-                            <label for="servicio">Servicio requerido</label>
-                            <select id="servicio" class="form-control" required>
-                                <option value="">Seleccione un servicio</option>
-                                <option value="consulta">Consulta inicial</option>
-                                <option value="seguimiento">Seguimiento</option>
-                                <option value="especializado">Servicio especializado</option>
-                                <option value="otro">Otro</option>
-                            </select>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Mensaje adicional"></textarea>
                         </div>
-                        <div class="form-group text-left">
-                            <label for="fecha">Fecha preferida</label>
-                            <input type="date" id="fecha" class="form-control" required>
-                        </div>
-                        <div class="form-group text-left">
-                            <label for="hora">Hora preferida</label>
-                            <input type="time" id="hora" class="form-control" required>
-                        </div>
-                        <div class="form-group text-left">
-                            <label for="mensaje">Mensaje adicional</label>
-                            <textarea id="mensaje" class="form-control" placeholder="Detalles adicionales sobre tu cita"></textarea>
-                        </div>
-                        <button type="submit" class="site-btn mt-4">Reservar cita</button>
+                        <button type="submit" class="site-btn btn-block mt-3">Reservar cita</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Formulario de Agenda de Citas End -->
 
-<!-- Footer Section Begin -->
+<!-- Footer Section -->
 <footer class="footer">
     <div class="container">
         <div class="footer__top">
@@ -249,34 +193,27 @@
                 </div>
             </div>
         </div>
-        
         <div class="footer__copyright">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     <p class="footer__copyright__text">Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
+                        <script>document.write(new Date().getFullYear());</script>
                         Todos los derechos reservados | Esta pagina está hecha con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="#" target="_blank">El rey del código</a>
-                    </p>                        
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<!-- Footer Section End -->
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
